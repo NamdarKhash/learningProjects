@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+name = input("Enter you name: ")
+
+
+# In[2]:
+
+
+height=int(input("please enter your height in inches"))
+
+
+# In[3]:
+
+
+weight=int(input("please enter your Weight in pounds"))
+
+
+# In[4]:
+
+
+BMI = (weight * 703) / (height * height)
+
+
+# In[5]:
+
+
+print(BMI)
+
+
+# In[6]:
+
+
+if BMI>0:
+    if(BMI<18.5):
+        print(name +", you are underwight.")
+    elif (BMI<=24.9):
+        print(name +", you are normal weight.")
+    elif (BMI<29.9):
+        print(name +", you are overweight. You need to exercise more and stop sitting and writing so many python tutorials.")
+    elif (BMI<34.9):
+        print(name +", you are obese.")
+    elif (BMI<39.9):
+        print(name +", you are severely obese.")
+    else:
+        print(name +", you are morbidly obese.")
+else:
+    print("Enter valid input")
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
